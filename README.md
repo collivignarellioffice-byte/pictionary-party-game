@@ -65,7 +65,7 @@ The production build is written to `dist/`. The build script also copies the rul
 
 ## Role and process
 
-Concept, game flow, interface direction and original prototype by Martina Collivignarelli. The recovered prototype was reviewed, refactored, tested and documented with AI-assisted development. Product decisions and final validation remained human-led.
+Concept, game flow, interface direction and original prototype by Martina Colli Vignarelli. The recovered prototype was reviewed, refactored, tested and documented with AI-assisted development. Product decisions and final validation remained human-led.
 
 ## License
 
