@@ -1,0 +1,28 @@
+{
+  "name": "pictionary-party-game",
+  "version": "1.0.0",
+  "description": "A local team drawing game with a digital board, dice, prompts and timer.",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo export --platform web --output-dir dist && node scripts/prepare-pages.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~6.1.2",
+    "@expo/vector-icons": "^15.0.3",
+    "expo": "~54.0.37",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-dom": "^19.1.0",
+    "react-native": "0.81.5",
+    "react-native-paper": "4.9.2",
+    "react-native-web": "^0.21.3"
+  },
+  "private": true
+}

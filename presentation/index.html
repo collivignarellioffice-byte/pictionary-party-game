@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Regolamento del gioco Pictionary: 2–4 squadre, 60 caselle, cinque categorie e un solo dispositivo." />
+    <meta name="theme-color" content="#003049" />
+    <title>Pictionary · Regolamento</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pictionary, torna all'inizio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <strong>Pictionary</strong>
+      </a>
+      <nav aria-label="Navigazione principale">
+        <a href="#regole">Regole</a>
+        <a href="#categorie">Categorie</a>
+        <a href="#prima-di-giocare">Preparazione</a>
+      </nav>
+      <a class="header-cta" data-game-link href="../dist/index.html">Apri il gioco</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <h1>Regolamento<br />ufficiale<br /><span>del prototipo</span></h1>
+          <p class="hero-lead">Un gioco da tavolo per 2–4 squadre. L’app gestisce tabellone, parole, timer e pedine. Potete tirare il dado nell’app oppure usare il vostro.</p>
+          <div class="hero-actions">
+            <a class="button primary" data-game-link href="../dist/index.html">Gioca ora</a>
+            <a class="button secondary" href="#regole">Leggi le regole</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>2–4</dt><dd>squadre</dd></div>
+            <div><dt>60</dt><dd>caselle</dd></div>
+            <div><dt>5</dt><dd>categorie</dd></div>
+          </dl>
+        </div>
+
+        <div class="board-stage" aria-label="Anteprima del tabellone di gioco">
+          <div class="board-card">
+            <div class="board-heading"><span>Tocca a</span><strong>Squadra Blu</strong></div>
+            <div class="mini-board" id="mini-board" aria-hidden="true"></div>
+            <div class="board-footer">
+              <span>Posizione <strong>17 / 60</strong></span>
+              <span class="dice">4</span>
+            </div>
+          </div>
+          <div class="floating-label label-one">PAROLA: BICICLETTA</div>
+          <div class="floating-label label-two">01:30</div>
+        </div>
+      </section>
+
+      <section class="needs section-shell" id="prima-di-giocare">
+        <div class="section-intro">
+          <h2>Il telefono è il tabellone.<br />Il disegno resta analogico.</h2>
+        </div>
+        <div class="setup-layout">
+          <article class="setup-focus">
+            <h3>Disegnate dal vivo</h3>
+            <p>Preparate fogli o una lavagna e un pennarello per ogni squadra. Chi disegna guarda la parola sul telefono, poi posa il dispositivo: il disegno e i tentativi avvengono insieme, nella stessa stanza.</p>
+          </article>
+          <div class="setup-details">
+            <article>
+              <h3>Scegliete come tirare il dado</h3>
+              <p>Usate il dado digitale nell’app oppure tirate un dado fisico e registrate il risultato sullo schermo.</p>
+            </article>
+            <article>
+              <h3>L’app tiene il ritmo</h3>
+              <p>Assegna la categoria e la parola, misura il tempo e aggiorna le posizioni sul tabellone.</p>
+            </article>
+            <article>
+              <h3>Formate le squadre</h3>
+              <p>Scegliete da 2 a 4 squadre, date un nome a ciascuna e assegnate pedine di colori diversi.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rules section-shell" id="regole">
+        <div class="section-intro split">
+          <div>
+            <h2>Come funziona un turno</h2>
+          </div>
+          <p>La squadra avanza soltanto quando indovina. In caso di successo gioca ancora; altrimenti resta ferma e passa il turno.</p>
+        </div>
+
+        <ol class="rule-list">
+          <li>
+            <span class="rule-index">01</span>
+            <div><h3>Tira il dado</h3><p>Usa il dado digitale oppure tira il tuo dado fisico e registra il risultato. La pedina si muoverà soltanto se la parola viene indovinata.</p></div>
+          </li>
+          <li>
+            <span class="rule-index">02</span>
+            <div><h3>Controlla la categoria</h3><p>La casella di arrivo provvisoria determina il tipo di parola da disegnare.</p></div>
+          </li>
+          <li>
+            <span class="rule-index">03</span>
+            <div><h3>Scopri la parola</h3><p>Tocca la carta e mostra la parola solo alla persona che disegna. Un avversario può fare da arbitro.</p></div>
+          </li>
+          <li>
+            <span class="rule-index">04</span>
+            <div><h3>Avvia il timer</h3><p>Premi “Disegna”. La durata dipende dalle impostazioni scelte prima della partita, da 30 secondi a 2 minuti e 30.</p></div>
+          </li>
+          <li>
+            <span class="rule-index">05</span>
+            <div><h3>Registra l’esito</h3><p>Se la squadra indovina, premi “Indovinato”. Allo scadere del tempo conferma se la risposta è arrivata oppure no.</p></div>
+          </li>
+          <li>
+            <span class="rule-index">06</span>
+            <div><h3>Avanza o passa</h3><p>Con la risposta corretta la pedina avanza del valore del dado e la stessa squadra continua. Se sbaglia, resta ferma e gioca la squadra successiva.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="categories" id="categorie">
+        <div class="section-shell">
+          <div class="section-intro inverse">
+            <h2>Le cinque categorie</h2>
+          </div>
+          <div class="category-grid">
+            <article class="category yellow"><span>01</span><h3>Persone, luoghi e animali</h3><p>Personaggi, città, ambienti e creature riconoscibili.</p></article>
+            <article class="category blue"><span>02</span><h3>Oggetti</h3><p>Cose concrete, strumenti e oggetti della vita quotidiana.</p></article>
+            <article class="category orange"><span>03</span><h3>Azioni</h3><p>Verbi e attività da rendere con movimento e contesto.</p></article>
+            <article class="category green"><span>04</span><h3>Difficili</h3><p>Concetti astratti o complessi, scelti in base al livello.</p></article>
+            <article class="category red"><span>05</span><h3>Sfida</h3><p>Scene complete e situazioni da costruire nel disegno.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="fair-play section-shell">
+        <div class="fair-play-card">
+          <div>
+            <h2>Regole di disegno</h2>
+          </div>
+          <ul>
+            <li>Niente lettere, parole o numeri.</li>
+            <li>Niente gesti o spiegazioni a voce.</li>
+            <li>La squadra può fare tentativi senza limite durante il timer.</li>
+            <li>La prima squadra che raggiunge la casella 60 vince; non serve un tiro esatto.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="difficulty section-shell">
+        <div class="section-intro">
+          <h2>Scegliete il ritmo<br />prima di iniziare.</h2>
+        </div>
+        <div class="difficulty-table" role="table" aria-label="Livelli di difficoltà e tempi consigliati">
+          <div class="difficulty-row header" role="row"><span>Livello</span><span>Cosa cambia</span><span>Tempo consigliato</span></div>
+          <div class="difficulty-row" role="row"><strong>Bassa</strong><span>Parole concrete e scene immediate</span><b>1 min 30 s</b></div>
+          <div class="difficulty-row" role="row"><strong>Media</strong><span>Concetti comuni con maggiore varietà</span><b>1 min 30 s</b></div>
+          <div class="difficulty-row" role="row"><strong>Alta</strong><span>Parole astratte e sfide articolate</span><b>1 min</b></div>
+        </div>
+        <p class="table-note">Il tempo può essere personalizzato da 30 secondi a 2 minuti e 30, a intervalli di 5 secondi.</p>
+      </section>
+
+      <section class="final-cta section-shell">
+        <div>
+          <h2>Formate le squadre.<br />Al resto pensa l’app.</h2>
+        </div>
+        <div class="final-actions">
+          <a class="button primary" data-game-link href="../dist/index.html">Apri il gioco</a>
+          <a class="button secondary light" href="https://github.com/collivignarellioffice-byte/pictionary-party-game">Guarda il codice</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Pictionary, prototipo di gioco locale a squadre</span>
+      <span>Progettato e sviluppato da Martina Collivignarelli</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
